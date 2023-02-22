@@ -3,304 +3,326 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../CSS/style.css">
 <html>
-  <title>Cinevault+</title>
+<title>Cinevault+</title>
+
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="javascript:void(0)">
-                <img src="../Assets/Icon.png" style="width: 60px;">
-            </a>
-            <span class="navbar-text" style="color: white;">Cinevault+</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="collapse navbar-collapse" id="mynavbar">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)">
+        <img src="../Assets/Icon.png" style="width: 60px;">
+      </a>
+      <span class="navbar-text" style="color: white;">Cinevault+</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="collapse navbar-collapse" id="mynavbar">
 
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="javascript:void(0)" onclick="location.href ='Page10-11.html';" style="color: orange;">หน้าแรก</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page18.html';">ลงรอบภาพยนตร์</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page20.html';">ค้นหาข้อมูลผู้ใช้งาน</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="text" placeholder="Search">
-                    <button class="btn btn-secondary" type="button">Search</button>
-                </form>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="">
-                    <img src="../Assets/userIcon.png" style="width: 30px;">
-                </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="javascript:void(0)" onclick="location.href ='Page10-11.html';"
+              style="color: orange;">หน้าแรก</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page18.html';">ลงรอบภาพยนตร์</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)"
+              onclick="location.href ='Page20.html';">ค้นหาข้อมูลผู้ใช้งาน</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary" type="button">Search</button>
+        </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img src="../Assets/userIcon.png" style="width: 30px;">
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-            </div>
-        </div>
-    </nav>
-    <br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </nav>
+  <br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <div class="page10">
-      <br>
-      <div class="Box1">
-        ยอดขายตั๋ววันนี้
-        <p>2153ที่นั่ง</p>
+  <div class="page10">
+    <br>
+    <div class="Box1">
+      ยอดขายตั๋ววันนี้
+      <p>2153ที่นั่ง</p>
+    </div>
+    <br>
+    <div class="Box2">
+      ยอดขายตั๋ว(เมื่อวาน)
+      <p>1464 ที่นั่ง</p>
+    </div>
+    <br>
+    <div class="Box3">
+      ยอดยกเลิกตั๋ว(วันนี้)
+      <p>9 ที่นั่ง</p>
+    </div>
+    <br>
+    <div class="Box4">
+      กำไร(เดือนนี้)
+      <p>66.67%</p>
+    </div>
+    <br>
+    <div class="Box4">
+      ดูตารางทั้งหมด
+      <p class="sales">ยอดขาย</p>
+      <p class="movie-ticket">ตั๋วภาพยนตร์</p>
+    </div>
+    <div class="Graph">
+      <div class="topmovieday topmovieday-radius">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+
+          // Load Charts and the corechart package.
+          google.charts.load('current', { 'packages': ['corechart'] });
+
+          // Draw the pie chart for Sarah's pizza when Charts is loaded.
+          google.charts.setOnLoadCallback(topmovieday);
+
+          // Callback that draws the pie chart for Sarah's pizza.
+          function topmovieday() {
+
+            // Create the data table for Sarah's pizza.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Topping');
+            data.addColumn('number', 'Slices');
+            data.addRows([
+              ['ภาพยนตร์ A', 1],
+              ['ภาพยนตร์ B', 1],
+              ['ภาพยนตร์ C', 2],
+              ['ภาพยนตร์ D', 2]
+            ]);
+
+            // Set options for Sarah's pie chart.
+            var options = {
+              title: 'ภาพยนตร์ขายดีประจำวันนี้',
+              width: 400,
+              height: 300
+            };
+
+            // Instantiate and draw the chart for Sarah's pizza.
+            var chart = new google.visualization.PieChart(document.getElementById('topmovieday_chart_div'));
+            chart.draw(data, options);
+          }
+        </script>
+        <!--Table and divs that hold the pie charts-->
+        <table class="columns">
+          <tr>
+            <td>
+              <div id="topmovieday_chart_div"></div>
+            </td>
+          </tr>
+        </table>
       </div>
-      <br>
-      <div class="Box2">
-        ยอดขายตั๋ว(เมื่อวาน)
-        <p>1464 ที่นั่ง</p>
-      </div>
-      <br>
-      <div class="Box3">
-        ยอดยกเลิกตั๋ว(วันนี้)
-        <p>9 ที่นั่ง</p>
-      </div>
-      <br>
-      <div class="Box4">
-        กำไร(เดือนนี้)
-        <p>66.67%</p>
-      </div>
-      <br>
-      <div class="Box4">
-        ดูตารางทั้งหมด
-        <p class="sales">ยอดขาย</p>
-        <p class="movie-ticket">ตั๋วภาพยนตร์</p>
-      </div>
-      <div class="Graph">
-        <div class="topmovieday topmovieday-radius">
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <script type="text/javascript">
-      
-            // Load Charts and the corechart package.
-            google.charts.load('current', {'packages':['corechart']});
-      
-            // Draw the pie chart for Sarah's pizza when Charts is loaded.
-            google.charts.setOnLoadCallback(topmovieday);
-      
-            // Callback that draws the pie chart for Sarah's pizza.
-            function topmovieday() {
-      
-              // Create the data table for Sarah's pizza.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Topping');
-              data.addColumn('number', 'Slices');
-              data.addRows([
-                ['ภาพยนตร์ A', 1],
-                ['ภาพยนตร์ B', 1],
-                ['ภาพยนตร์ C', 2],
-                ['ภาพยนตร์ D', 2]
-              ]);
-      
-              // Set options for Sarah's pie chart.
-              var options = {title:'ภาพยนตร์ขายดีประจำวันนี้',
-                             width:400,
-                             height:300};
-      
-              // Instantiate and draw the chart for Sarah's pizza.
-              var chart = new google.visualization.PieChart(document.getElementById('topmovieday_chart_div'));
-              chart.draw(data, options);
-            }
-          </script>
-          <!--Table and divs that hold the pie charts-->
-          <table class="columns">
-            <tr>
-              <td><div id="topmovieday_chart_div"></div></td>
-            </tr>
-          </table>
-      </div>
-      
+
       <div class="topmovieweek">
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript">
           // Load Charts and the corechart package.
-          google.charts.load('current', {'packages':['corechart']});
+          google.charts.load('current', { 'packages': ['corechart'] });
           // Draw the pie chart for the Anthony's pizza when Charts is loaded.
           google.charts.setOnLoadCallback(topmovieweek);
           // Callback that draws the pie chart for Anthony's pizza.
           function topmovieweek() {
-      
-          // Create the data table for Anthony's pizza.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Topping');
-          data.addColumn('number', 'Slices');
-          data.addRows([
-            ['ภาพยนตร์ A', 1],
-            ['ภาพยนตร์ B', 1],
-            ['ภาพยนตร์ C', 2],
-            ['ภาพยนตร์ D', 2]
-          ]);
-  
-          // Set options for Anthony's pie chart.
-          var options = {title:'ภาพยนตร์ขายดีประจำสัปดาห์',
-                        width:400,
-                        height:300};
-  
-          // Instantiate and draw the chart for Anthony's pizza.
-          var chart = new google.visualization.PieChart(document.getElementById('topmovieweek_chart_div'));
-          chart.draw(data, options);
-        }
+
+            // Create the data table for Anthony's pizza.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Topping');
+            data.addColumn('number', 'Slices');
+            data.addRows([
+              ['ภาพยนตร์ A', 1],
+              ['ภาพยนตร์ B', 1],
+              ['ภาพยนตร์ C', 2],
+              ['ภาพยนตร์ D', 2]
+            ]);
+
+            // Set options for Anthony's pie chart.
+            var options = {
+              title: 'ภาพยนตร์ขายดีประจำสัปดาห์',
+              width: 400,
+              height: 300
+            };
+
+            // Instantiate and draw the chart for Anthony's pizza.
+            var chart = new google.visualization.PieChart(document.getElementById('topmovieweek_chart_div'));
+            chart.draw(data, options);
+          }
         </script>
         <table class="columns">
           <tr>
-            <td><div id="topmovieweek_chart_div" style="border: 1px solid #ccc"></div></td>
+            <td>
+              <div id="topmovieweek_chart_div" style="border: 1px solid #ccc"></div>
+            </td>
           </tr>
         </table>
       </div>
-  
+
       <div class="typemovie">
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <script type="text/javascript">
-      
-            // Load Charts and the corechart package.
-            google.charts.load('current', {'packages':['corechart']});
-      
-            // Draw the pie chart for Sarah's pizza when Charts is loaded.
-            google.charts.setOnLoadCallback(typemovie);
-      
-            // Callback that draws the pie chart for Sarah's pizza.
-            function typemovie() {
-      
-              // Create the data table for Sarah's pizza.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Topping');
-              data.addColumn('number', 'Slices');
-              data.addRows([
-                ['แอ็คชั่น', 1],
-                ['ผจญภัย', 1],
-                ['สงคราม', 2],
-                ['ดราม่า', 2]
-              ]);
-      
-              // Set options for Sarah's pie chart.
-              var options = {title:'ประเภทภาพยนตร์ขายดี',
-                            width:400,
-                            height:300};
-      
-              // Instantiate and draw the chart for Sarah's pizza.
-              var chart = new google.visualization.PieChart(document.getElementById('typemovie_chart_div'));
-              chart.draw(data, options);
-            }
-          </script>
-          <!--Table and divs that hold the pie charts-->
-          <table class="columns">
-            <tr>
-              <td><div id="typemovie_chart_div" style="border: 1px solid #ccc"></div></td>
-            </tr>
-          </table>
-        </div>
-  
-        <div class="topmovieyear">
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <script type="text/javascript">
-      
-            // Load Charts and the corechart package.
-            google.charts.load('current', {'packages':['corechart']});
-      
-             // Draw the pie chart for the Anthony's pizza when Charts is loaded.
-             google.charts.setOnLoadCallback(topmovieyear);
-      
-            // Callback that draws the pie chart for Sarah's pizza.
-            function topmovieyear() {
-      
-              // Create the data table for Sarah's pizza.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Topping');
-              data.addColumn('number', 'Slices');
-              data.addRows([
-                ['อันดับ 1', 1],
-                ['อันดับ 2', 1],
-                ['อันดับ 3', 2],
-                ['อันดับ 4', 2],
-                ['อันดับ 5', 2]
-              ]);
-      
-              // Set options for Sarah's pie chart.
-              var options = {title:'ประเภทภาพยนตร์ขายดี',
-                            width:400,
-                            height:300};
-      
-              // Instantiate and draw the chart for Sarah's pizza.
-              var chart = new google.visualization.PieChart(document.getElementById('topmovieyear_chart_div'));
-              chart.draw(data, options);
-            }
-          </script>
-          <!--Table and divs that hold the pie charts-->
-          <table class="columns">
-            <tr>
-              <td><div id="topmovieyear_chart_div" style="border: 1px solid #ccc"></div></td>
-            </tr>
-          </table>
-        </div>
-  
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+
+          // Load Charts and the corechart package.
+          google.charts.load('current', { 'packages': ['corechart'] });
+
+          // Draw the pie chart for Sarah's pizza when Charts is loaded.
+          google.charts.setOnLoadCallback(typemovie);
+
+          // Callback that draws the pie chart for Sarah's pizza.
+          function typemovie() {
+
+            // Create the data table for Sarah's pizza.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Topping');
+            data.addColumn('number', 'Slices');
+            data.addRows([
+              ['แอ็คชั่น', 1],
+              ['ผจญภัย', 1],
+              ['สงคราม', 2],
+              ['ดราม่า', 2]
+            ]);
+
+            // Set options for Sarah's pie chart.
+            var options = {
+              title: 'ประเภทภาพยนตร์ขายดี',
+              width: 400,
+              height: 300
+            };
+
+            // Instantiate and draw the chart for Sarah's pizza.
+            var chart = new google.visualization.PieChart(document.getElementById('typemovie_chart_div'));
+            chart.draw(data, options);
+          }
+        </script>
+        <!--Table and divs that hold the pie charts-->
+        <table class="columns">
+          <tr>
+            <td>
+              <div id="typemovie_chart_div" style="border: 1px solid #ccc"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="topmovieyear">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+
+          // Load Charts and the corechart package.
+          google.charts.load('current', { 'packages': ['corechart'] });
+
+          // Draw the pie chart for the Anthony's pizza when Charts is loaded.
+          google.charts.setOnLoadCallback(topmovieyear);
+
+          // Callback that draws the pie chart for Sarah's pizza.
+          function topmovieyear() {
+
+            // Create the data table for Sarah's pizza.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Topping');
+            data.addColumn('number', 'Slices');
+            data.addRows([
+              ['อันดับ 1', 1],
+              ['อันดับ 2', 1],
+              ['อันดับ 3', 2],
+              ['อันดับ 4', 2],
+              ['อันดับ 5', 2]
+            ]);
+
+            // Set options for Sarah's pie chart.
+            var options = {
+              title: 'ประเภทภาพยนตร์ขายดี',
+              width: 400,
+              height: 300
+            };
+
+            // Instantiate and draw the chart for Sarah's pizza.
+            var chart = new google.visualization.PieChart(document.getElementById('topmovieyear_chart_div'));
+            chart.draw(data, options);
+          }
+        </script>
+        <!--Table and divs that hold the pie charts-->
+        <table class="columns">
+          <tr>
+            <td>
+              <div id="topmovieyear_chart_div" style="border: 1px solid #ccc"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
       <div class="search1">
-          <a href="https://youtu.be/jNX9zWgRxyg"><img src="../Assets/search.png" alt="searchpng1" style="width: 40px; height: 40px;"></a>
+        <a href="https://youtu.be/jNX9zWgRxyg"><img src="../Assets/search.png" alt="searchpng1"
+            style="width: 40px; height: 40px;"></a>
       </div>
-  
+
       <div class="search2">
-          <a href="https://youtu.be/jNX9zWgRxyg"><img src="../Assets/search.png" alt="searchpng1" style="width: 40px; height: 40px;"></a>
+        <a href="https://youtu.be/jNX9zWgRxyg"><img src="../Assets/search.png" alt="searchpng1"
+            style="width: 40px; height: 40px;"></a>
       </div>
-      </div>
-      <div class="page11">
-          <br>
-          <h1>กราฟวิเคราะห์ยอดขาย</h1>
-         <div class="container">
-           <div class="data-visualization">
-             <!-- Add your data visualization component here -->
-             <canvas id="salesChart"></canvas>
-           </div>
-           <div class="filters">
-             <!-- Add your filters component here -->
-             <label for="movie-select">Movie:</label>
-             <select id="movie-select">
-               <option value="all">All</option>
-               <option value="movie1">แบล๊คแพนเธอร์ วาคานด้าจงเจริญ</option>
-               <option value="movie2">อวาตาร วิถีแห่งสายน้ำ</option>
-               <option value="movie2">ไลล์ จระเข้ตัวพ่อ หัวใจล้อหล่อ</option>
-               <option value="movie2">คริสต์มาสแค้น</option>
-               <option value="movie3"></option>
-             </select>
-             <label for="date-range">Date Range:</label>
-             <input type="date" id="start-date">
-             <input type="date" id="end-date">
-           </div>
-         </div>
-         <script>
-           // Add your JavaScript code here
-           // Example using Chart.js library
-           var ctx = document.getElementById('salesChart').getContext('2d');
-           var salesChart = new Chart(ctx, {
-             type: 'line',
-             data: {
-              labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
-               datasets: [{
-                 label: 'Sales',
-                 data: [12, 19, 3, 5, 2],
-                 borderColor: 'rgba(54, 162, 235, 1)',
-                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                 pointRadius: 5,
-                 pointBackgroundColor: 'rgba(54, 162, 235, 1)',
-                 pointBorderColor: '#fff',
-                 pointHoverRadius: 8,
-                 pointHoverBackgroundColor: 'rgba(54, 162, 235, 1)',
-                 pointHitRadius: 10
-               }]
-             },
-             options: {
-               scales: {
-                 yAxes: [{
-                   ticks: {
-                     beginAtZero: true
-                   }
-                 }]
-               }
-             }
-           });
-         </script>
-         </div>
-      </div>
-        
-    
     </div>
+    <div class="page11">
+      <br>
+      <h1>กราฟวิเคราะห์ยอดขาย</h1>
+      <div class="container">
+        <div class="data-visualization">
+          <!-- Add your data visualization component here -->
+          <canvas id="salesChart"></canvas>
+        </div>
+        <div class="filters">
+          <!-- Add your filters component here -->
+          <label for="movie-select">Movie:</label>
+          <select id="movie-select">
+            <option value="all">All</option>
+            <option value="movie1">แบล๊คแพนเธอร์ วาคานด้าจงเจริญ</option>
+            <option value="movie2">อวาตาร วิถีแห่งสายน้ำ</option>
+            <option value="movie2">ไลล์ จระเข้ตัวพ่อ หัวใจล้อหล่อ</option>
+            <option value="movie2">คริสต์มาสแค้น</option>
+            <option value="movie3"></option>
+          </select>
+          <label for="date-range">Date Range:</label>
+          <input type="date" id="start-date">
+          <input type="date" id="end-date">
+        </div>
+      </div>
+      <script>
+        // Add your JavaScript code here
+        // Example using Chart.js library
+        var ctx = document.getElementById('salesChart').getContext('2d');
+        var salesChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+            datasets: [{
+              label: 'Sales',
+              data: [12, 19, 3, 5, 2],
+              borderColor: 'rgba(54, 162, 235, 1)',
+              backgroundColor: 'rgba(54, 162, 235, 0.2)',
+              pointRadius: 5,
+              pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+              pointBorderColor: '#fff',
+              pointHoverRadius: 8,
+              pointHoverBackgroundColor: 'rgba(54, 162, 235, 1)',
+              pointHitRadius: 10
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: true
+                }
+              }]
+            }
+          }
+        });
+      </script>
+    </div>
+  </div>
+
+
+  </div>
 </body>
+
 </html>
