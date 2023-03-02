@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 22, 2023 at 10:53 AM
+-- Generation Time: Feb 28, 2023 at 01:26 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -138,6 +138,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`Email`, `password`, `userName`, `userdetails`, `idcard`, `datebirth`) VALUES
 ('korakodt63@nu.ac.th', 123, 'toto', '', 2147483647, '2023-02-01'),
+('logarithm.ptc@gmail.com', 1234, 'MV.Guitar', '', 2147483647, '2023-02-23'),
 ('test@email.com', 12345678, 'GT.BasicChord', '', 2147483647, '2020-02-06');
 
 --
