@@ -9,7 +9,7 @@
     {
         $_SESSION['email'] = $objResult['email'];
         $_SESSION['username'] = $objResult['name'];
-        header("Location:page1.html");
+        header("Location:page1.php");
 
 
     }

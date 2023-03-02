@@ -1,7 +1,7 @@
 <?php
     session_start();
     include("db.php");
-    $ticket = mysqli_query($connect, "SELECT * FROM `ticket` WHERE USERNAME=".$_SESSION['username']);
+    $ticket = mysqli_query($con, "SELECT * FROM `ticket` WHERE USERNAME=".$_SESSION['username']);
 
     while ($row = mysqli_fetch_array($ticket)){
         echo $row['Date'] . $row['MovieName'] . $row['Seat_number'] . $row['Showtime'] . $row['QRcode'] . $row['username'] . '<br>';
