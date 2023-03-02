@@ -20,14 +20,14 @@
                         
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1.html';">หน้าแรก </a>
+                                <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1.php';">หน้าแรก </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.html';"style="color: orange;">ภาพยนตร์</a>
+                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.php';"style="color: orange;">ภาพยนตร์</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)">
-                                    <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='Page22.html';">
+                                    <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='Page22.php';">
                                 </a>
                             </li>
                         </ul>
@@ -52,7 +52,7 @@
         <h3><span class="blu">แบล็ค แพนเธอร์</span></h3>
         <h3><span class="blu">วาคานด้าจงเจริญ</span></h3>
         <p>แอ๊คชั่น 160 นาที</p>
-        <center><button onclick="location.href ='Page5-1.html';">ดูเพิ่มเติม</button> </center>
+        <center><button onclick="location.href ='Page5-1.php';">ดูเพิ่มเติม</button> </center>
     </div>
     <div class="Avatar2">
         <br><br><br>
@@ -61,7 +61,7 @@
         <p>14 ธันวาคม 2022</p>
         <h3><span class="blu">อวาตาร วิถีแห่งสายน้ำ</span></h3>
         <p>แอ๊คชั่น 190 นาที</p>
-        <center><button onclick="location.href ='Page5-2.html';">ดูเพิ่มเติม</button> </center>
+        <center><button onclick="location.href ='Page5-2.php';">ดูเพิ่มเติม</button> </center>
     </div>
     <div class="LyleLyle">
         <br><br><br>

@@ -29,19 +29,19 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="collapse navbar-collapse" id="mynavbar">
             
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="javascript:void(0)" style="color: orange;" onclick="location.href ='Page1.html';">หน้าแรก </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.html';">ภาพยนตร์</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">
-                        <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='Page22.html';">
-                    </a>
-                </li>
-            </ul>
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1.php';">หน้าแรก </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.php';"style="color: orange;">ภาพยนตร์</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='Page22.php';">
+                                </a>
+                            </li>
+                        </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary" type="button">Search</button>
@@ -89,22 +89,22 @@
 
             </nav>
             <div class="card" style="width:30%;" >
-              <a href='Page5-2.html'>
+              <a href='Page5-2.php'>
                 <div class="box1">
                   <h2>อวาตาร 2</h2>
                 </div>
               </a>
-              <a href="Page5-4.html">
+              <a href="Page5-4.php">
                 <div class="box2">
                   <h2>คริสต์มาสแค้น</h2>
                 </div>
               </a>
-              <a href="Page5-1.html">
+              <a href="Page5-1.php">
                 <div class="box3">
                   <h2>แบล็ค แพนเธอร์: วาคานด้าจงเจริญ</h2>
                 </div>
               </a>
-              <a href="Page5-3.html">
+              <a href="Page5-3.php">
                 <div class="box4">
                   <h2>ไลล์ จระเข้ตัวพ่อ..หัวใจล้อหล่..</h2>
                 </div>

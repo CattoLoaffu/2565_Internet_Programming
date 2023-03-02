@@ -24,19 +24,19 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <div class="collapse navbar-collapse" id="mynavbar">
                 
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="javascript:void(0)" onclick="location.href ='Page1.php';">หน้าแรก </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.php';">ภาพยนตร์</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">
-                            <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='Page22.php';">
-                        </a>
-                    </li>
-                </ul>
+            <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1.php';">หน้าแรก </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.php';"style="color: orange;">ภาพยนตร์</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">
+                                    <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='Page22.php';">
+                                </a>
+                            </li>
+                        </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="text" placeholder="Search">
                     <button class="btn btn-secondary" type="button">Search</button>
