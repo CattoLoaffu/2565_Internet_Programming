@@ -7,9 +7,8 @@
     $objResult = mysqli_fetch_array($objQuery);
     if($objResult)
     {
-        $_SESSION['email'] = $objResult['email'];
-        $_SESSION['username'] = $objResult['name'];
-        header("Location:page1.php");
+        $_SESSION['username'] = $objResult['userName'];
+        header("Location:page1-1.php");
 
 
     }

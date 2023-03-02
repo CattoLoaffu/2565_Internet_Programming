@@ -16,11 +16,11 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 
             <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1.php';">หน้าแรก </a>
+              <li class="nav-item">
+                  <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1-1.php';">หน้าแรก </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.php';"style="color: orange;">ภาพยนตร์</a>
+                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2-1.php';"style="color: orange;">ภาพยนตร์</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)">
@@ -33,8 +33,8 @@
                     <button class="btn btn-secondary" type="button">Search</button>
                 </form>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="page3.php">
-                <img src="../Assets/userIcon.png" style="width: 30px;">
+                <a href="logout.php">
+                <img src="../Assets/logout.png" style="width: 40px;">
             </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     

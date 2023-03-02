@@ -33,9 +33,9 @@
                     <button class="btn btn-secondary" type="button">Search</button>
                 </form>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="">
-                    <img src="../Assets/userIcon.png" style="width: 30px;">
-                </a>
+                <a href="page3.php">
+                <img src="../Assets/userIcon.png" style="width: 30px;">
+            </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
             </div>
