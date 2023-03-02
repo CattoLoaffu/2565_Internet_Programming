@@ -71,7 +71,7 @@ include("checkSession.php");
             <bold style="color: #ffffff;"></bold>
             <br><br>
             <bold style="color: #ffffff;"> I </bold>&nbsp;&nbsp;&nbsp;
-            <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('I1')" id = "I1" onclick=""> &nbsp;&nbsp;
+            <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('I1')" id = "I1"> &nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('I2')" id = "I2"> &nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('I3')" id = "I3"> &nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('I4')" id = "I4"> &nbsp;&nbsp;
