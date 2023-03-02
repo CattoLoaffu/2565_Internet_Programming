@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php session_start(); 
+include("checkSession.php");
+?>
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">

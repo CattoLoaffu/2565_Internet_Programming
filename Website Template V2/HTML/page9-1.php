@@ -1,6 +1,7 @@
 <?php
     session_start();
     include("db.php");
+    include("checkSession.php");
     $ticket = mysqli_query($con, "SELECT * FROM `ticket` WHERE USERNAME=".$_SESSION['username']);
 
     while ($row = mysqli_fetch_array($ticket)){
