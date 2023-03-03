@@ -3,8 +3,7 @@
 <meta charset="UTF-8">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../CSS/style.css">
-
-<script src='../JS/page7-JS.js'></script>
+<script src="../JS/page7-JS.js"></script>
 <html>
     <title>Cinevault+</title>
 <body>
@@ -69,7 +68,7 @@
             <bold style="color: #ffffff;"></bold>
             <br><br>
             <bold style="color: #ffffff;"> I </bold>&nbsp;&nbsp;&nbsp;
-            <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('I1')" id = "I1" onclick=""> &nbsp;&nbsp;
+            <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('I1')" id = "I1"> &nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('I2')" id = "I2"> &nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('I3')" id = "I3"> &nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('I4')" id = "I4"> &nbsp;&nbsp;
@@ -201,7 +200,8 @@
               <p>Standdart: <span id="normal">0</span></p>
               <p>Sofa Sweet: <span id="sofa">0</span></p>
               <p>จำนวนที่นั่งทั้งหมด: <span id="all-seats">0</span></p>
-              <p>Total price: <span id="total-price">0.00</span>฿</p>
+              <p>ที่นั่งที่เลือก: <span id="selectedSeats">None</span></p>
+              <p>ราคาทั้งหมด: <span id="total-price">0.00</span>฿</p>
               <button type="button" onclick="location.href ='Page9-1.php';">ชำระเงิน</button>
         </div>
     </div>
