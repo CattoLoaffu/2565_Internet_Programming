@@ -4,6 +4,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../CSS/style.css">
 <script src="../JS/page7-JS.js"></script>
+
+
 <html>
     <title>Cinevault+</title>
 <body>
@@ -53,7 +55,7 @@
                     </table>
                     <br>
                 </div>
-        <div class="Chair">
+        <div class="Chair" form action="check_seat.php">
             <bold style="color: #ffffff;"> J </bold>&nbsp;&nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('J1')" id = "J1"> &nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('J2')" id = "J2"> &nbsp;&nbsp;
@@ -183,13 +185,15 @@
             <br><br>
             </div>
         </div>
-
         
         <div class="choose-seat">
+            <br><br>
             <div class="movie-container">
                 <img class="poster" src="../Assets/BP2.jpg" alt="Movie 1 Poster">
                 <div>
                   <h3>แบล็ค แพนเธอร์ วาคานด้าจงเจริญ</h3>
+                  <p id="date" class="showtime"></p>
+                  <script src="../JS/Realtime.js"></script>
                   <p class="showtime">13:30น.</p>
                 </div>
               <div class="seat-type">
