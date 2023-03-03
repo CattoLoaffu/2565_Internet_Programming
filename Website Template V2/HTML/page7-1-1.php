@@ -5,8 +5,9 @@ include("checkSession.php");
 <meta charset="UTF-8">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../CSS/style.css">
+<script src="../JS/page7-JS.js"></script>
 
-<script src='../JS/page7-JS.js'></script>
+
 <html>
     <title>Cinevault+</title>
 <body>
@@ -56,7 +57,7 @@ include("checkSession.php");
                     </table>
                     <br>
                 </div>
-        <div class="Chair">
+        <div class="Chair" form action="check_seat.php">
             <bold style="color: #ffffff;"> J </bold>&nbsp;&nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('J1')" id = "J1"> &nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('J2')" id = "J2"> &nbsp;&nbsp;
@@ -186,13 +187,15 @@ include("checkSession.php");
             <br><br>
             </div>
         </div>
-
         
         <div class="choose-seat">
+            <br><br>
             <div class="movie-container">
                 <img class="poster" src="../Assets/BP2.jpg" alt="Movie 1 Poster">
                 <div>
                   <h3>แบล็ค แพนเธอร์ วาคานด้าจงเจริญ</h3>
+                  <p id="date" class="showtime"></p>
+                  <script src="../JS/Realtime.js"></script>
                   <p class="showtime">13:30น.</p>
                 </div>
               <div class="seat-type">
@@ -203,7 +206,8 @@ include("checkSession.php");
               <p>Standdart: <span id="normal">0</span></p>
               <p>Sofa Sweet: <span id="sofa">0</span></p>
               <p>จำนวนที่นั่งทั้งหมด: <span id="all-seats">0</span></p>
-              <p>Total price: <span id="total-price">0.00</span>฿</p>
+              <p>ที่นั่งที่เลือก: <span id="selectedSeats">None</span></p>
+              <p>ราคาทั้งหมด: <span id="total-price">0.00</span>฿</p>
               <button type="button" onclick="location.href ='Page9-1.php';">ชำระเงิน</button>
         </div>
     </div>

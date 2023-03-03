@@ -191,7 +191,7 @@ include("checkSession.php");?>
                 <img class="poster" src="../Assets/BP2.jpg" alt="Movie 1 Poster">
                 <div>
                   <h3>แบล็ค แพนเธอร์ วาคานด้าจงเจริญ</h3>
-                  <p class="showtime">13:30น.</p>
+                  <p class="showtime">16:30น.</p>
                 </div>
               <div class="seat-type">
                 <img class="seat-image" src="../Assets/standdart.png" alt="Normal Seat">
