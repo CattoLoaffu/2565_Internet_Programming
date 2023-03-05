@@ -71,7 +71,7 @@
         <h3><span class="blu">ไลล์ จระเข้ตัวพ่อ</span></h3>
         <h3><span class="blu">..หัวใจล้อหล่อ</span></h3>
         <p> ตลก/มิวสิคัล 105 นาที</p>
-        <center><button onclick="location.href ='Page5-3.html';">ดูเพิ่มเติม</button> </center>
+        <center><button onclick="location.href ='Page5-3.php';">ดูเพิ่มเติม</button> </center>
     </div>
     <div class="ChristmasCarol">
         <br><br><br>
@@ -80,7 +80,7 @@
             <p>29 ธันวาคม 2022</p>
             <h3><span class="blu">คริสต์มาสแค้น</span></h3>       
             <p> ระทึกขวัญ 131 นาที</p>
-        <center><button onclick="location.href ='Page5-4.html';">ดูเพิ่มเติม</button> </center>   
+        <center><button onclick="location.href ='Page5-4.php';">ดูเพิ่มเติม</button> </center>   
     </div>
 </body>
 </html>

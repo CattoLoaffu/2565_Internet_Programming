@@ -63,7 +63,7 @@
                     </tr>
                 </table>
                 <br>
-                <button class="view-showtimes-button" onclick="location.href ='Page6-4.html';">ดูรอบฉายทั้งหมด</button>
+                <button class="view-showtimes-button" onclick="location.href ='Page6-4.php';">ดูรอบฉายทั้งหมด</button>
             </div>
         </div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/eJSwpVxC5aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

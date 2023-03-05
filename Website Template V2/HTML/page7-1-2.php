@@ -191,6 +191,8 @@ include("checkSession.php");?>
                 <img class="poster" src="../Assets/BP2.jpg" alt="Movie 1 Poster">
                 <div>
                   <h3>แบล็ค แพนเธอร์ วาคานด้าจงเจริญ</h3>
+                  <p id="date" class="showtime"></p>
+                  <script src="../JS/Realtime.js"></script>
                   <p class="showtime">16:30น.</p>
                 </div>
               <div class="seat-type">
@@ -201,7 +203,8 @@ include("checkSession.php");?>
               <p>Standdart: <span id="normal">0</span></p>
               <p>Sofa Sweet: <span id="sofa">0</span></p>
               <p>จำนวนที่นั่งทั้งหมด: <span id="all-seats">0</span></p>
-              <p>Total price: <span id="total-price">0.00</span>฿</p>
+              <p>ที่นั่งที่เลือก: <span id="selectedSeats">None</span></p>
+              <p>ราคาทั้งหมด: <span id="total-price">0.00</span>฿</p>
               <button type="button" onclick="location.href ='Page9-1.php';">ชำระเงิน</button>
         </div>
     </div>

@@ -31,10 +31,10 @@
             
           <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                  <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1-1.php';">หน้าแรก </a>
+                  <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1-1.php';" style="color: orange;">หน้าแรก </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2-1.php';"style="color: orange;">ภาพยนตร์</a>
+                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2-1.php';">ภาพยนตร์</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)">
