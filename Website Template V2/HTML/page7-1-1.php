@@ -3,7 +3,8 @@
 <meta charset="UTF-8">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../CSS/style.css">
-<script src="../JS/page7-JS.js"></script>
+<script src="../JS/page7-JS.js">
+</script>
 
 
 <html>
@@ -55,7 +56,7 @@
                     </table>
                     <br>
                 </div>
-        <div class="Chair" form action="check_seat.php">
+        <div class="Chair">
             <bold style="color: #ffffff;"> J </bold>&nbsp;&nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('J1')" id = "J1"> &nbsp;&nbsp;
             <img src="../Assets/chair.png" style="width: 50px;" onclick="changeImage('J2')" id = "J2"> &nbsp;&nbsp;
@@ -185,29 +186,34 @@
             <br><br>
             </div>
         </div>
-        
-        <div class="choose-seat">
-            <br><br>
-            <div class="movie-container">
-                <img class="poster" src="../Assets/BP2.jpg" alt="Movie 1 Poster">
-                <div>
-                  <h3>แบล็ค แพนเธอร์ วาคานด้าจงเจริญ</h3>
-                  <p id="date" class="showtime"></p>
-                  <script src="../JS/Realtime.js"></script>
-                  <p class="showtime">13:30น.</p>
-                </div>
-              <div class="seat-type">
-                <img class="seat-image" src="../Assets/standdart.png" alt="Normal Seat">
-                <img class="seat-image" src="../Assets/sofa sweet.png" alt="Sofa Seat">
-              </div>
-              <p class="showtime">160บาท&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;180บาท</p>
-              <p>Standdart: <span id="normal">0</span></p>
-              <p>Sofa Sweet: <span id="sofa">0</span></p>
-              <p>จำนวนที่นั่งทั้งหมด: <span id="all-seats">0</span></p>
-              <p>ที่นั่งที่เลือก: <span id="selectedSeats">None</span></p>
-              <p>ราคาทั้งหมด: <span id="total-price">0.00</span>฿</p>
-              <button type="button" onclick="location.href ='Page9-1.php';">ชำระเงิน</button>
-        </div>
+    
+<form id="seat-selection-form" action="sent_seat.php" method="POST">
+  <div class="choose-seat">
+    <br><br>
+    <div class="movie-container">
+      <img class="poster" src="../Assets/BP2.jpg" alt="Movie 1 Poster">
+      <h3 id="MovieName">แบล็ค แพนเธอร์ วาคานด้าจงเจริญ</h3>
+      <input type="hidden" name="MovieName" id="MovieName" value="แบล็ค แพนเธอร์ วาคานด้าจงเจริญ">
+
+      <p id="date"></p>
+      <script src="../JS/RealDate.js"></script>
+
+      <p id="showtime" name="showtime">13:30น.</p>
+      <input type="hidden" name="showtime"  id="showtime" value="13:30AM">
+
+      <div class="seat-type">
+        <img class="seat-image" src="../Assets/standdart.png" alt="Normal Seat">
+        <img class="seat-image" src="../Assets/sofa sweet.png" alt="Sofa Seat">
+      </div>
+      <p class="showtime">160บาท&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;180บาท</p>
+      <p>Standdart: <span id="normal">0</span></p>
+      <p>Sofa Sweet: <span id="sofa">0</span></p>
+      <p>จำนวนที่นั่งทั้งหมด: <span id="all-seats">0</span></p>
+      <p>ที่นั่งที่เลือก: <span id="selectedSeats" name="selectedSeats">None</span></p>
+      <p>ราคาทั้งหมด: <span id="total-price">0.00</span>฿</p>
+      <button type="submit" id="submit-button">ชำระเงิน</button>
     </div>
-  </body>
+  </div>
+</form>
+</body>
 </html>
