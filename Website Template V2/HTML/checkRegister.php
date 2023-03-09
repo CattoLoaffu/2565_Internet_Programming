@@ -7,8 +7,9 @@
     $conpassword = $_POST["conpass"];
     $idnum = $_POST["idnum"];
     $dateb = $_POST["bd"];
+    $time = date("Y-m-d H:i:s");
 
-    $strSQL = "INSERT INTO user(Email, password , userName , idcard , datebirth) VALUES ('$email','$password','$name' ,'$idnum','$dateb')";
+    $strSQL = "INSERT INTO user(t_stamp ,Email, password , userName , idcard , datebirth) VALUES ('$time','$email','$password','$name' ,'$idnum','$dateb')";
     $objQuery = mysqli_query($con,$strSQL);
     if($objQuery)
     {
