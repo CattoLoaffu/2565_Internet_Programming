@@ -196,7 +196,7 @@ include("checkSession.php");
             "H1","H2","H3","H4","H5","H6","H7","H8","H9","H10","I1","I2","I3","I4","I5","I6","I7","I8","I9","I10","J1","J2","J3","J4","J5","J6","J7","J8","J9","J10");
 
             foreach($seatID as $s){
-                $strSQL = "SELECT * FROM `seat` WHERE Seat_number = '$s' and Showtime = '13:30' and MovieName = 'แบล็ค แพนเธอร์ วาคานด้าจงเจริญ'";
+                $strSQL = "SELECT * FROM `seat` WHERE Seat_number = '$s' and Showtime = '13:30AM' and MovieName = 'แบล็ค แพนเธอร์ วาคานด้าจงเจริญ'";
                 $q = mysqli_query($con,$strSQL);
                 if(mysqli_num_rows($q) > 0){
                     echo "<script type='text/javascript'>checkExist('".$s."');</script>";
