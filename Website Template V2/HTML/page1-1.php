@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="../CSS/style.css">
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="../CSS/style2.css">
-<?php session_start(); ?>
+<?php include("checkSession.php"); ?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -31,10 +31,10 @@
             
           <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                  <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1.php';"style="color: orange;">หน้าแรก </a>
+                  <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1-1.php';" style="color: orange;">หน้าแรก </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.php';">ภาพยนตร์</a>
+                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2-1.php';">ภาพยนตร์</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)">
@@ -47,8 +47,8 @@
                 <button class="btn btn-secondary" type="button">Search</button>
             </form>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="page3.php">
-                <img src="../Assets/userIcon.png" style="width: 30px;">
+            <a href="logout.php">
+                <img src="../Assets/logout.png" style="width: 40px;">
             </a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -89,22 +89,22 @@
 
             </nav>
             <div class="card" style="width:30%;" >
-              <a href='Page5-2.php'>
+              <a href='Page5-2-1.php'>
                 <div class="box1">
                   <h2>อวาตาร 2</h2>
                 </div>
               </a>
-              <a href="Page5-4.php">
+              <a href="Page5-4-1.php">
                 <div class="box2">
                   <h2>คริสต์มาสแค้น</h2>
                 </div>
               </a>
-              <a href="Page5-1.php">
+              <a href="Page5-1-1.php">
                 <div class="box3">
                   <h2>แบล็ค แพนเธอร์: วาคานด้าจงเจริญ</h2>
                 </div>
               </a>
-              <a href="Page5-3.php">
+              <a href="Page5-3-1.php">
                 <div class="box4">
                   <h2>ไลล์ จระเข้ตัวพ่อ..หัวใจล้อหล่..</h2>
                 </div>

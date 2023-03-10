@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php session_start(); 
+include("checkSession.php");
+?>
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,11 +22,11 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 
             <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1.php';">หน้าแรก </a>
+              <li class="nav-item">
+                  <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1-1.php';">หน้าแรก </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.php';"style="color: orange;">ภาพยนตร์</a>
+                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2-1.php';"style="color: orange;">ภาพยนตร์</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)">
@@ -37,9 +39,9 @@
                     <button class="btn btn-secondary" type="button">Search</button>
                 </form>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="">
-                    <img src="../Assets/userIconOrange.png" style="width: 30px;">
-                </a>
+                <a href="logout.php">
+                <img src="../Assets/logout.png" style="width: 40px;">
+            </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
             </div>
@@ -186,6 +188,21 @@
             <br><br>
             </div>
         </div>
+
+        <?php
+            include("db.php");
+            $seatID = array("A1", "A2", "A3", "A4","A5","B1","B2","B3","B4","B5","C1","C2","C3","C4","C5","D1","D2","D3","D4","D5","D6","D7","D8","D9","D10",
+            "E1","E2","E3","E4","E5","E6","E7","E8","E9","E10","F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","G1","G2","G3","G4","G5","G6","G7","G8","G9","G10",
+            "H1","H2","H3","H4","H5","H6","H7","H8","H9","H10","I1","I2","I3","I4","I5","I6","I7","I8","I9","I10","J1","J2","J3","J4","J5","J6","J7","J8","J9","J10");
+
+            foreach($seatID as $s){
+                $strSQL = "SELECT * FROM `seat` WHERE Seat_number = '$s' and Showtime = '13:30' and MovieName = 'แบล็ค แพนเธอร์ วาคานด้าจงเจริญ'";
+                $q = mysqli_query($con,$strSQL);
+                if(mysqli_num_rows($q) > 0){
+                    echo "<script type='text/javascript'>checkExist('".$s."');</script>";
+                }
+            }
+        ?>
     
 <form id="seat-selection-form" action="sent_seat.php" method="POST">
   <div class="choose-seat">
@@ -206,7 +223,7 @@
         <img class="seat-image" src="../Assets/sofa sweet.png" alt="Sofa Seat" onclick="changeImageSofa(this.id);">
       </div>
       <p class="showtime">160บาท&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;180บาท</p>
-      <p>Standdart: <span id="normal">0</span></p>
+      <p>Standard: <span id="normal">0</span></p>
       <p>Sofa Sweet: <span id="sofa">0</span></p>
       <p>จำนวนที่นั่งทั้งหมด: <span id="all-seats">0</span></p>
       <p>ที่นั่งที่เลือก: <span id="selectedSeats" name="selectedSeats">None</span></p>

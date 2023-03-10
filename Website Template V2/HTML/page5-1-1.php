@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php include("checkSession.php"); ?>
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,11 +16,11 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 
             <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1.php';">หน้าแรก </a>
+              <li class="nav-item">
+                    <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1-1.php';">หน้าแรก </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.php';"style="color: orange;">ภาพยนตร์</a>
+                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2-1.php';"style="color: orange;">ภาพยนตร์</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)">
@@ -33,8 +33,8 @@
                     <button class="btn btn-secondary" type="button">Search</button>
                 </form>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="page3.php">
-                <img src="../Assets/userIcon.png" style="width: 30px;">
+                <a href="logout.php">
+                <img src="../Assets/logout.png" style="width: 40px;">
             </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
@@ -63,7 +63,7 @@
                     </tr>
                 </table>
                 <br>
-                <button class="view-showtimes-button" onclick="location.href ='Page6-1.php';">ดูรอบฉายทั้งหมด</button>
+                <button class="view-showtimes-button" onclick="location.href ='Page6-1-1.php';">ดูรอบฉายทั้งหมด</button>
             </div>
         </div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/AVxX2Or8JmM" title="YouTube video player"

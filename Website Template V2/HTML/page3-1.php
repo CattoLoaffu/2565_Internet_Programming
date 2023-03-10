@@ -1,19 +1,9 @@
-<?php
-    include("db.php");
-    include("checkSession.php");
-    $ticket = mysqli_query($con, "SELECT * FROM `ticket` WHERE USERNAME=".$_SESSION['username']);
-
-    while ($row = mysqli_fetch_array($ticket)){
-        echo $row['Date'] . $row['MovieName'] . $row['Seat_number'] . $row['Showtime'] . $row['QRcode'] . $row['username'] . '<br>';
-
-    }
-?>
+<?php include("checkSession.php"); ?>
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../CSS/style.css">
 <html>
-
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
@@ -46,32 +36,41 @@
                 <img src="../Assets/logout.png" style="width: 40px;">
             </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
             </div>
         </div>
     </nav>
-    <br><br><br><br><br><br>
-    <title>Cinevault+</title>
-    </head>
+<html>
+    <head>
+        <title>Cinevault+</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       <link href="https://fonts.googleapis.com/css?family=Nunito:600,700,900" rel="stylesheet">
 
-        <div id="ticket-info">
-            <img src="../Assets/remove.png" width=30px boder=2 align=right onclick="location.href ='Page22.php';">
-            <img src="../Assets/LyleLyle.jpeg" width=200px boder=2 align=right  style="padding-right: 20px;">
-            <h1 style="color: white;"></h1> 
-            <p style="color: orange;"></p>   
-            <p style="color: white;"></p>
-            <p style="color: orange;">: </p>
-            <p style="color: white;"></p>
-            <p style="color: orange;"></p>
-            <p style="color: white;"></p>
-            <p style="color: orange;"></p>
-            <p style="color: white;"></p>
-            <p style="color: orange;"></p>
-            <p style="color: white;"></p> 
+
+    <body id="body">
+        <div id="login-card-login" class="card">
+        <div class="card-body">
+          <h2 class="text-center">LOG IN</h2>
+          <br>
+          <form method="post" action="checklog.php">
+            <div class="form-group">
+              <center><input type="email" class="form-control" id="email-login" placeholder="Email Address" name="email"></center>
+            </div>
+            <div class="form-group">
+              <center><input type="password" class="form-control" id="email-login" placeholder="Password" name="pass"></center>
+            </div>
+            <center><input type="submit" value="Login" id="click-login" name="login" ></center>
+        <br>
+        <div>
+            <center><input type="button" value="Sign in" id="click-login" onclick="location.href = 'page4.php';"></center>
         </div>
-       
-        <div id="qr-code"><br>
-           <img src="../Assets/QR.png" alt="QR code">
-            <p style="color: white;">สแกน Qr code หน้าโรงหนังเพื่อรับตั๋วภาพยนตร์</p>
-
+        <br>
+        <center><span class="psw"><a href="#">ลืมรหัสผ่าน?</a></span></center>
+</body>
 </html>
-

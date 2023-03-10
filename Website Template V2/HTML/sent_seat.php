@@ -1,3 +1,4 @@
+
 <?php
 $date = date('Y-m-d'); // Get today's date in 'YYYY-MM-DD' format
 $showtime = $_POST['showtime'];

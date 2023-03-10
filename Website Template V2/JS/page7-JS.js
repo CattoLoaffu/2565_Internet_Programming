@@ -71,3 +71,13 @@ function updateSelectedSeats() {
     }
   }
 }
+
+function checkExist(x){
+  if(document.getElementById(x).src.match("../Assets/sofa.png")){
+    document.getElementById(x).src = "../Assets/bookedsofa.png";
+    document.getElementById(x).onclick = null;
+  }else{
+    document.getElementById(x).src = "../Assets/booked.png";
+    document.getElementById(x).onclick = null;
+  }
+}

@@ -1,4 +1,5 @@
-<?php session_start(); ?>
+<?php session_start(); 
+include("checkSession.php");?>
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,11 +18,11 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 
             <ul class="navbar-nav me-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1.php';">หน้าแรก </a>
+              <li class="nav-item">
+                  <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1-1.php';">หน้าแรก </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.php';"style="color: orange;">ภาพยนตร์</a>
+                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2-1.php';"style="color: orange;">ภาพยนตร์</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)">
@@ -34,9 +35,9 @@
                     <button class="btn btn-secondary" type="button">Search</button>
                 </form>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="">
-                    <img src="../Assets/userIconOrange.png" style="width: 30px;">
-                </a>
+                <a href="logout.php">
+                <img src="../Assets/logout.png" style="width: 40px;">
+            </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
             </div>
@@ -189,7 +190,9 @@
             <div class="movie-container">
                 <img class="poster" src="../Assets/Avatar2.jpg" alt="Movie 1 Poster">
                 <div>
-                  <h3>แบล็ค แพนเธอร์ วาคานด้าจงเจริญ</h3>
+                  <h3>อวาตาร วิถีแห่งสายน้ำ</h3>
+                  <p id="date" class="showtime"></p>
+                  <script src="../JS/Realtime.js"></script>
                   <p class="showtime">13:30น.</p>
                 </div>
               <div class="seat-type">
@@ -200,8 +203,9 @@
               <p>Standdart: <span id="normal">0</span></p>
               <p>Sofa Sweet: <span id="sofa">0</span></p>
               <p>จำนวนที่นั่งทั้งหมด: <span id="all-seats">0</span></p>
-              <p>Total price: <span id="total-price">0.00</span>฿</p>
-              <button type="button" onclick="location.href ='Page9-2.php';">ชำระเงิน</button>
+              <p>ที่นั่งที่เลือก: <span id="selectedSeats">None</span></p>
+              <p>ราคาทั้งหมด: <span id="total-price">0.00</span>฿</p>
+              <button type="button" onclick="location.href ='Page9-1.php';">ชำระเงิน</button>
         </div>
     </div>
   </body>
