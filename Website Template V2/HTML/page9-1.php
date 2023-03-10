@@ -1,12 +1,10 @@
 <?php
     include("db.php");
     include("checkSession.php");
-    $ticket = mysqli_query($con, "SELECT * FROM `ticket` WHERE USERNAME=".$_SESSION['username']);
-
-    while ($row = mysqli_fetch_array($ticket)){
-        echo $row['Date'] . $row['MovieName'] . $row['Seat_number'] . $row['Showtime'] . $row['QRcode'] . $row['username'] . '<br>';
-
-    }
+    $uname = $_SESSION['username'];
+    $strSQL = "SELECT * FROM `ticket` WHERE username = '".$uname."'";
+    $query = mysqli_query($con,$strSQL);
+    $row = mysqli_fetch_assoc($query);
 ?>
 <!DOCTYPE html>
 <meta charset="UTF-8">
@@ -55,17 +53,17 @@
         <div id="ticket-info">
             <img src="../Assets/remove.png" width=30px boder=2 align=right onclick="location.href ='Page22.php';">
             <img src="../Assets/WakandaPoster.png" width=200px boder=2 align=right  style="padding-right: 20px;">
-            <h1 style="color: white;"></h1> 
-            <p style="color: orange;"></p>   
+            <h1 style="color: white;">จองที่นั่งสำเร็จ</h1> 
+            <p style="color: orange;">ชื่อภาพยนตร์ : แบล็ค แพนเธอร์ วาคานด้าจงเจริญ</p>   
             <p style="color: white;"></p>
-            <p style="color: orange;">: </p>
-            <p style="color: white;"></p>
-            <p style="color: orange;"></p>
-            <p style="color: white;"></p>
-            <p style="color: orange;"></p>
-            <p style="color: white;"></p>
-            <p style="color: orange;"></p>
-            <p style="color: white;"></p> 
+            <p style="color: orange;">ที่นั่งของคุณ : </p>
+            <p style="color: white;">:</p>
+            <p style="color: orange;">:</p>
+            <p style="color: white;">:</p>
+            <p style="color: orange;">:</p>
+            <p style="color: white;">:</p>
+            <p style="color: orange;">:</p>
+            <p style="color: white;">:</p> 
         </div>
        
         <div id="qr-code"><br>
