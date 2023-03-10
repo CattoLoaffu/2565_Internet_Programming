@@ -219,14 +219,15 @@ include("checkSession.php");
       <input type="hidden" name="showtime"  id="showtime" value="13:30AM">
 
       <div class="seat-type">
-        <img class="seat-image" src="../Assets/standdart.png" alt="Normal Seat">
-        <img class="seat-image" src="../Assets/sofa sweet.png" alt="Sofa Seat">
+        <img class="seat-image" src="../Assets/standdart.png" alt="Normal Seat" onclick="changeImage(this.id);">
+        <img class="seat-image" src="../Assets/sofa sweet.png" alt="Sofa Seat" onclick="changeImageSofa(this.id);">
       </div>
       <p class="showtime">160บาท&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;180บาท</p>
       <p>Standard: <span id="normal">0</span></p>
       <p>Sofa Sweet: <span id="sofa">0</span></p>
       <p>จำนวนที่นั่งทั้งหมด: <span id="all-seats">0</span></p>
       <p>ที่นั่งที่เลือก: <span id="selectedSeats" name="selectedSeats">None</span></p>
+      <input type="hidden" id="selectedSeatsInput" name="selectedSeatsInput" value="">
       <p>ราคาทั้งหมด: <span id="total-price">0.00</span>฿</p>
       <button type="submit" id="submit-button">ชำระเงิน</button>
     </div>
